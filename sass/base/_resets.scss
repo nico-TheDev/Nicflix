@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: calc(1vw + 0.5vh);
+
+    @include query(tabp){
+        font-size: 1rem;
+    }
+}
+
+body{
+    line-height: 1.5;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}

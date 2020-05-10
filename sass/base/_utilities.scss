@@ -1,0 +1,33 @@
+.icon{
+    width:1.3rem;
+    height:1.3rem;
+    fill: white;
+}
+
+.colored{
+    color: limegreen;
+    display: inline-block;
+    margin-right:5px;
+}
+
+.boxed{
+    border: 1px solid gray;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 1px;
+    cursor: pointer;
+    &:hover{
+        background-color: gray;
+        text-decoration: none !important;
+    }
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.u-mb{margin-bottom: 0.6rem;}
+.u-mb-1{margin-bottom: 1rem;}
+.u-mb-2{margin-bottom: 2rem;}
+.u-mb-3{margin-bottom: 4rem;}
+.u-mb-4{margin-bottom: 6rem;}

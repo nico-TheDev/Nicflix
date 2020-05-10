@@ -1,0 +1,86 @@
+.nav{
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to bottom,rgba(#111,1));
+    color: white;
+    padding: 0 2rem;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    z-index: 99;
+    &__logo{
+        width: 5.9rem;
+        height: auto;
+        margin-right: 1rem;
+        flex-shrink: 0;
+    }
+
+    &__profile{
+        width: 2.65rem;
+        height: 2.65rem;
+        display: inline-block;
+    }
+
+    ul{
+        display: flex;
+        align-items: center;
+    }
+
+    &__list1{
+        margin-right: auto;
+        flex-shrink: 3;
+    }
+
+    &__item{
+        padding: 0 1rem;
+    }
+
+    &__list2{
+        & > *:not(:last-child){
+            padding-right: 1.3rem;
+        }
+    }
+
+    &__link{
+        transition: all 300ms;
+        font-size: 1rem;
+        &:hover{
+            color: darken(white,15%);
+        }
+    }
+
+    &__user{
+        display: flex;
+        align-items: center;
+    }
+
+
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 13.6rem;
+    overflow: hidden;
+    &__btn{
+        position: absolute;
+        top: 5px;
+        left: 90%;
+        z-index: 2;
+        transition: all 500ms ease;
+    }
+
+    &__search{
+        width: 100%;
+        font-family: inherit;
+        font-size: 0.8rem;
+        padding: 0.4rem;
+        padding-left: 2rem;
+        background:transparent;
+        color:white;
+        transition:all 500ms ease;
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
