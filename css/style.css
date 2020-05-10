@@ -22,6 +22,8 @@ html {
 body {
   line-height: 1.5;
   font-family: 'Montserrat', sans-serif;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(20%, transparent), to(rgba(0, 0, 0, 0.7)));
+  background-image: linear-gradient(to bottom, transparent 0%, transparent 20%, rgba(0, 0, 0, 0.7) 100%);
 }
 
 a {
@@ -108,6 +110,7 @@ button {
   background-size: cover;
   -webkit-box-shadow: inset 5px 5px 1rem black;
           box-shadow: inset 5px 5px 1rem black;
+  background-position: center;
 }
 
 .header__cover::before {
@@ -232,7 +235,6 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   width: 3rem;
-  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .header__carousel svg {
@@ -333,8 +335,20 @@ button {
       flex-shrink: 3;
 }
 
+@media only screen and (max-width: 900px) {
+  .nav .firstList {
+    display: none;
+  }
+}
+
 .nav__item {
   padding: 0 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .nav__list2 {
+    margin-left: auto;
+  }
 }
 
 .nav__list2 > *:not(:last-child) {
@@ -358,6 +372,10 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.nav .bell {
+  padding-left: 0;
 }
 
 .form {
@@ -394,6 +412,68 @@ button {
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   opacity: 0;
+}
+
+.home {
+  min-height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0.7)));
+  background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.7));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.home__nav {
+  padding: 1rem 2rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.home__logo {
+  width: 5.9rem;
+  height: auto;
+  display: block;
+}
+
+.home__users {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home__img {
+  width: 8rem;
+  margin: 0 0.4rem;
+  border: 5px solid transparent;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.home__img:hover {
+  border-color: white;
+}
+
+.home__manage {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  border: 3px solid currentColor;
+  padding: 0.5rem;
+  color: gray;
+  font-weight: normal;
+}
+
+.home__manage:hover {
+  color: white;
 }
 
 .buttons {
@@ -446,8 +526,41 @@ button {
   transition: 500ms ease-in;
 }
 
+.moviecard__cover {
+  width: 100%;
+  position: relative;
+}
+
+.moviecard__cover::before {
+  content: url(/img/SVG/play.svg);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.moviecard__cover:hover::before {
+  opacity: 1;
+}
+
 .moviecard__img {
   width: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
   margin-bottom: 1rem;
   cursor: pointer;
 }

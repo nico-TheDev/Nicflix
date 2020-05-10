@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicflix &ndash; Go here when netflix is down</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html"><img src="./img/logo.png" alt="netflix-font" class="nav__logo"></a>
+        <ul class="nav__list1 firstList">
+            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">TV Shows</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Movies</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Latest</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">My List</a></li>
+        </ul>
+        <ul class="nav__list2">
+            <form action="#" class="form">
+                <button class="form__btn">
+                    <svg class="icon form__searchicon">
+                        <use xlink:href="/img/sprites.svg#icon-search"></use>
+                    </svg>
+                </button>
+                <input type="text" class="form__search" placeholder="Titles,people,genres">
+            </form>
+            <li class="nav__item">
+                <a href="#" class="nav__link giftbtn">
+                    <svg class="icon nav__gift">
+                        <use xlink:href="/img/sprites.svg#icon-gift"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="nav__item bell">
+                <a href="#" class="nav__link bellbtn">
+                    <svg class="icon nav__bell">
+                        <use xlink:href="/img/sprites.svg#icon-notification"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="nav__user">
+                <img src="/img/profile.jpg" alt="" class="nav__profile">
+                <button class="nav__btn">
+                    <svg class="icon nav__icondown">
+                        <use xlink:href="/img/sprites.svg#icon-cheveron-down"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </nav>
+    <!-- START OF HEADER -->
+
+    <header class="header">
+        <div class="overlay"></div>
+        <div class="header__cover"></div>
+        <img src="./img/bb-logo.png" alt="" class="header__logo u-mb-1">
+        <div class="header__content">
+            <div class="text showElement">
+                <p class="header__classic u-mb">
+                    <span class="colored">Classic</span>
+                    2013 <span class="boxed">18+</span> 5 Seasons
+                </p>
+                <p class="header__ranking u-mb">#1 in the World Today</p>
+                <p class="header__desc u-mb-1">
+                    Breaking Bad follows Walter White, a meek high school science teacher who transforms into a ruthless player in the local methamphetamine drug trade, driven by a desire to provide for his family after being diagnosed with terminal lung cancer.
+                </p>
+                <div class="header__actions u-mb-1">
+                    <div class="buttons">
+                        <button class="btn play">
+                            <svg class="icon playicon">
+                                <use xlink:href="/img/sprites.svg#icon-play"></use>
+                            </svg>
+                            Play
+                        </button>
+                        <button class="btn add">
+                            <svg class="icon addicon">
+                                <use xlink:href="/img/sprites.svg#icon-plus"></use>
+                            </svg>
+                            My List
+                        </button>
+                    </div>
+                    <button class="header__like">
+                        <svg class="icon likeicon">
+                            <use xlink:href="/img/sprites.svg#icon-thumbs-up"></use>
+                        </svg>
+                    </button>
+                    <button class="header__like">
+                        <svg class="icon dislikeicon">
+                            <use xlink:href="/img/sprites.svg#icon-thumbs-down"></use>
+                        </svg>
+                    </button>
+                </div>
+                <p class="header__cast">
+                    Starring: Bryan Cranston,Aaron Paul, Anna Gunn
+                </p>
+                <p class="header__genre">
+                    Genres: Action,Drugs,Drama
+                </p>
+                <p class="header__this">
+                    This movie is:the Best,Amazing
+                </p>
+            </div>
+
+            <div class="header__carousel">
+                <button class="sliderBtn prevBtn">
+                    <svg class="icon lefticon">
+                        <use xlink:href="/img/sprites.svg#icon-cheveron-left"></use>
+                    </svg>
+                </button>
+
+                <div class="slider-container">
+                    <div class="moviecard">
+                        <div class="moviecard__cover">
+                            <img src="./img/lucifer.jpg" alt="lucifer" class="moviecard__img">
+                        </div> 
+                        <p class="moviecard__classic u-mb">
+                            2020 <span class="boxed">18+</span> 4 Seasons
+                        </p> 
+                        <p class="moviecard__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ab unde rerum adipisci molestias quae!
+                        </p>
+                    </div>
+                    <div class="moviecard">
+                        <div class="moviecard__cover">
+                            <img src="./img/johnwick.webp" alt="lucifer" class="moviecard__img">
+                        </div>
+                        <p class="moviecard__classic u-mb">
+                            2017 <span class="boxed">18+</span> 1hr 40m
+                        </p> 
+                        <p class="moviecard__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ab unde rerum adipisci molestias quae!
+                        </p>
+                    </div>
+                    <div class="moviecard">
+                        <div class="moviecard__cover">
+                            <img src="./img/zombieland.webp" alt="zombieland" class="moviecard__img">
+                        </div>
+                        <p class="moviecard__classic u-mb">
+                            2020 <span class="boxed">18+</span> 1hr 40m
+                        </p> 
+                        <p class="moviecard__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ab unde rerum adipisci molestias quae!
+                        </p>
+                    </div>
+                    <div class="moviecard">
+                        <div class="moviecard__cover">
+                            <img src="./img/escaperoom.webp" alt="escaperoom" class="moviecard__img">
+                        </div>
+                        <p class="moviecard__classic u-mb">
+                            2020 <span class="boxed">18+</span> 1hr 32m
+                        </p> 
+                        <p class="moviecard__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ab unde rerum adipisci molestias quae!
+                        </p>
+                    </div>
+                    <div class="moviecard">
+                        <div class="moviecard__cover">
+                            <img src="./img/kimetsu.webp" alt="lucifer" class="moviecard__img">
+                        </div>
+                        <p class="moviecard__classic u-mb">
+                            2020 <span class="boxed">12+</span> 1 Season
+                        </p> 
+                        <p class="moviecard__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ab unde rerum adipisci molestias quae!
+                        </p>
+                    </div>
+                    <div class="moviecard">
+                        <div class="moviecard__cover">
+                            <img src="./img/avatar.webp" alt="lucifer" class="moviecard__img">
+                        </div>
+                        <p class="moviecard__classic u-mb">
+                            2010 <span class="boxed">12+</span> 3 Seasons
+                        </p>
+                        <p class="moviecard__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ab unde rerum adipisci molestias quae!
+                        </p>
+                    </div>
+                    <div class="moviecard">
+                        <div class="moviecard__cover">
+                            <img src="./img/kingdom.jpg" alt="lucifer" class="moviecard__img">
+                        </div>
+                        <p class="moviecard__classic u-mb">
+                            2020 <span class="boxed">18+</span> 2 Seasons
+                        </p> 
+                        <p class="moviecard__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ab unde rerum adipisci molestias quae!
+                        </p>
+                    </div>
+                    <div class="moviecard">
+                        <div class="moviecard__cover">
+                            <img src="./img/murder.webp" alt="lucifer" class="moviecard__img">
+                        </div>
+                        <p class="moviecard__classic u-mb">
+                            2019 <span class="boxed">18+</span> 5 Seasons
+                        </p> 
+                        <p class="moviecard__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ab unde rerum adipisci molestias quae!
+                        </p>
+                    </div>
+                    <div class="moviecard">
+                        <div class="moviecard__cover">
+                            <img src="./img/despicable.webp" alt="lucifer" class="moviecard__img">
+                        </div>
+                        <p class="moviecard__classic u-mb">
+                            2020 <span class="boxed">18+</span> 1hr 44m
+                        </p> 
+                        <p class="moviecard__desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ab unde rerum adipisci molestias quae!
+                        </p>
+                    </div>
+               
+                </div>
+
+                <button class="sliderBtn nextBtn">
+                    <svg class="icon righticon">
+                        <use xlink:href="/img/sprites.svg#icon-cheveron-right"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="detailsChunk">
+                <ul class="detailsChunk__list">
+                    <li class="detailsChunk__item bold">Director</li>
+                    <li class="detailsChunk__item u-mb-1"><a href="#" class="detailsChunk__link">Vince Gilligan</a></li>
+                    <li class="detailsChunk__item bold">Cast</li>
+                    <li class="detailsChunk__item"><a href="#" class="detailsChunk__link">Aaron Paul</a></li>
+                    <li class="detailsChunk__item"><a href="#" class="detailsChunk__link">Bryan Cranston</a></li>
+                    <li class="detailsChunk__item"><a href="#" class="detailsChunk__link">Anna Gunn</a></li>
+                    <li class="detailsChunk__item"><a href="#" class="detailsChunk__link">Dean Norris</a></li>
+                    <li class="detailsChunk__item"><a href="#" class="detailsChunk__link">Betsy Brandt</a></li>
+                    <li class="detailsChunk__item"><a href="#" class="detailsChunk__link">RJ Mitte</a></li>    
+                </ul>
+
+                <ul class="detailsChunk__list">
+                    <li class="detailsChunk__item bold">Genres</li>
+                    <li class="detailsChunk__item"><a href="#" class="detailsChunk__link">TV Show</a></li>
+                    <li class="detailsChunk__item u-mb-1"><a href="#" class="detailsChunk__link">US Series</a></li>
+
+                    <li class="detailsChunk__item bold">This movie is</li>
+                    <li class="detailsChunk__item"><a href="#" class="detailsChunk__link">Amazing</a></li>
+                    <li class="detailsChunk__item"><a href="#" class="detailsChunk__link">The Best</a></li>
+                </ul>
+
+                <ul class="detailsChunk__list">
+                    <li class="detailsChunk__item bold">Maturity Ratings</li>
+                    <li class="detailsChunk__item"><a href="#" class="detailsChunk__link boxed">18+</a></li>
+                    <li class="detailsChunk__item"><a href="#" class="detailsChunk__link">Language, Violence</a></li>
+                    <li class="detailsChunk__item">Recommended 18 ages and up</li>
+                
+                </ul>
+            </div>
+        </div>
+        <ul class="header__nav">
+            <li class="headerNavBtn overview borderColorRed">Overview</li>
+            <li class="headerNavBtn more">More Like this</li>
+            <li class="headerNavBtn details">Details</li>
+        </ul>
+    </header>
+<!-- header end -->
+    <section class="movieSlides">
+        
+    </section>
+</body>
+</html>

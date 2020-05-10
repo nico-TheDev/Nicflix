@@ -13,6 +13,7 @@
         height: auto;
         margin-right: 1rem;
         flex-shrink: 0;
+      
     }
 
     &__profile{
@@ -29,6 +30,13 @@
     &__list1{
         margin-right: auto;
         flex-shrink: 3;
+    
+    }
+    
+    .firstList{
+        @include query(tabp){
+            display: none;
+        }
     }
 
     &__item{
@@ -36,6 +44,10 @@
     }
 
     &__list2{
+
+        @include query(tabp){
+            margin-left: auto;
+        }
         & > *:not(:last-child){
             padding-right: 1.3rem;
         }
@@ -54,7 +66,9 @@
         align-items: center;
     }
 
-
+    .bell{
+        padding-left: 0;
+    }
 }
 
 .form{
