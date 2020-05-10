@@ -41,6 +41,10 @@ button {
   cursor: pointer;
 }
 
+button:focus {
+  outline: none;
+}
+
 .icon {
   width: 1.3rem;
   height: 1.3rem;
